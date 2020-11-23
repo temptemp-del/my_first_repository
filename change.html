@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div-1"> HTML</div>
+    <div id="div-2"> CSS </div>
+    <div id="div-3"> JavaScript </div>
+
+    <button onclick="changeColor()"> Change color </button>
+
+    <script>
+        var count = 0
+        function changeColor() {
+            if (count == 0) {
+                document.getElementById("div-1").style.backgroundColor = "blue"
+            } else if (count == 1) {
+                document.getElementById("div-1").style.backgroundColor = "purple"
+            } else if (count == 2) {
+                document.getElementById("div-1").style.backgroundColor = "pink"
+            } else {
+                document.getElementById("div-1").style.backgroundColor = "orange"
+                count= -1
+            }
+            count++
+        }
+        // var count = 0
+        // function changeColor() {
+        //     if (count == 0) {
+        //         document.getElementById("div-2").style.backgroundColor = "blue"
+        //     } else if (count == 1) {
+        //         document.getElementById("div-2").style.backgroundColor = "purple"
+        //     } else if (count == 2) {
+        //         document.getElementById("div-2").style.backgroundColor = "pink"
+        //     } else {
+        //         document.getElementById("div-2").style.backgroundColor = "orange"
+        //         count= -1
+        //     }
+        //     count++
+        // }
+    </script>
+
+</body>
+
+</html>
